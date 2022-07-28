@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recipe2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_recipe2Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="어묵탕"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/iv_recipe2Image"
+                android:layout_width="match_parent"
+                android:layout_height="214dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/image_recipe2_big"
+                tools:layout_width="403dp" />
+
+            <TextView
+                android:id="@+id/tv_recipe2Hashtag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:text="#한식 #국물요리" />
+
+            <TextView
+                android:id="@+id/tv_recipe2Ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="재료"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/lv_recipe2Ingredients"
+                    android:layout_width="197dp"
+                    android:layout_height="match_parent" />
+
+                <ListView
+                    android:id="@+id/lv_recipe2IngredientsAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="196dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" >
+
+                </ListView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_recipe2Sauce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="양념"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/lv_recipe2Sauce"
+                    android:layout_width="197dp"
+                    android:layout_height="match_parent" />
+
+                <ListView
+                    android:id="@+id/lv_recipe2SauceAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="196dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_recipe2Order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="조리 순서"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_recipe2HowTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="1.양파, 대파, 청양고추를 먹기 좋은 크기를 썰어줍니다.\n2.육수를 냄비에 담아 팔팔 끓을 때까지 기다립니다.\n3.육수가 끓기 시작하면 어묵과 양파를 넣어줍니다. 이때 진간장과 맛술로 간을 내줍니다.\n4.어묵이 둥둥 떠오르기 시작하면 미리 썰어둔 대파와 고추를 넣어줍니다.
+" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

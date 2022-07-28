@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cookit">
+    <!-- 인터넷 권한 선언 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".GlobalHelper"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CookIT"
+        android:usesCleartextTraffic="true"
+        >
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="4cef65a7523bbdc3a4f51c4133ce00d4" />
+
+        <activity android:name=".SplashActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            <intent-filter>-->
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity android:name=".snsRegister"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".KakaoLogin"></activity>
+        <activity android:name=".NaverLogin"></activity>
+        <activity android:name=".GoogleLogin"></activity>
+        <activity android:name=".AppMain"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustNothing">
+        </activity>
+        <activity android:name=".AddFood"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".DefaultRecipe"></activity>
+        <activity android:name=".MemberJoin"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity android:name=".Recipe1"></activity>
+        <activity android:name=".Recipe2"></activity>
+        <activity android:name=".Recipe3"></activity>
+        <activity android:name=".Setting"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+
+    </application>
+
+</manifest>

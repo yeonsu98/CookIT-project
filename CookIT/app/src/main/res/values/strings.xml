@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CookIT</string>
+    <string name="naver_client_id">XZ_JSfyWTu29jvCTE1hx</string>
+    <string name="naver_client_secret">JzfFX1ikZa</string>
+    <string name="naver_client_name">cookIT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

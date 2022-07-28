@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recipe1">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_recipe1Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="차돌된장찌개"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/iv_recipe1Image"
+                android:layout_width="match_parent"
+                android:layout_height="214dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/image_recipe1_big"
+                tools:layout_width="403dp" />
+
+            <TextView
+                android:id="@+id/tv_recipe1Hashgtag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:text="#한식 #국물요리 #간편요리" />
+
+            <TextView
+                android:id="@+id/tv_recipe1Ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="재료"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/lv_recipe1Ingredients"
+                    android:layout_width="187dp"
+                    android:layout_height="match_parent" />
+
+                <ListView
+                    android:id="@+id/lv_recipe1IngredientsAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="249dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_recipe1Amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="양념"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/lv_recipe1Sauce"
+                    android:layout_width="184dp"
+                    android:layout_height="249dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp">
+
+                </ListView>
+
+                <ListView
+                    android:id="@+id/lv_recipe1SauceAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_recipe1Order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="조리 순서"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_recipe1HowTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:text="1.냄비에 대패삼겹살을 넣고 볶아줍니다. 기름이 나오면 채썬 무를 넣고 같이 볶아줍니다.\n2.된장 3스푼, 고추장 1스푼을 넣고 볶다가 물 3.5컵을 부어줍니다. 다진마늘을 넣고 끓을 때까지 중간중간 잘 젛어줍니다.\n3.먹기 전 파와 고추를 모두 넣고 한소끔 끓여줍니다.
+" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
